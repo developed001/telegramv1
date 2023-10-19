@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+// TELEGRAM FIRST PAGE
+body {
+  background: rgb(33, 33, 33);
+}
+
+.telfir__page {
+  max-width: 400px;
+  margin: auto;
+  padding: 64px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+
+  // HEAD
+  &-head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      margin: auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 25px;
+    }
+
+    .head__title {
+      margin: 24px 0px 16px;
+      color: #ffffff;
+      font-size: 21px;
+      font-weight: 500;
+    }
+  }
+
+  // BODY
+  &-body {
+    display: flex;
+    flex-direction: column;
+
+    .body__texts {
+      margin: 0px 0px 16px;
+      padding: 0px 28px;
+      display: flex;
+
+      &-num {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 12px 10px 0 0;
+
+        span {
+          background-color: rgb(135, 116, 225);
+          border-radius: 50%;
+          padding: 3px 8px;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        .fir__span {
+          margin-top: 1px;
+        }
+
+        .sec__span {
+          margin-top: -1px;
+        }
+
+        .thi__span {
+          margin-top: 18px;
+        }
+      }
+
+      &-p {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+    }
+
+    a {
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      color: #8774E1;
+      font-size: 16px;
+      font-weight: 400;
+      transition-duration: 0.5s;
+    }
+    
+    a:hover {
+      background-color: rgb(16,15,16);
+    }
+  }
+}
+
+// TRANSLATOR
+.translator {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  padding: 6px 12px;
+  font-size: 18px;
+  background-color: rgba(33, 33, 33, 1);
+  border: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+
+  option {
+    border: none;
+  }
+}
+
+.translator:hover {
+  background-color: rgb(16,15,16,0.5);
+  cursor: pointer;
+}
